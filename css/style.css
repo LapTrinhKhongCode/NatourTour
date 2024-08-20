@@ -111,6 +111,15 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .popup__content {
+    background-color: red; }
+
 .bg-video {
   position: absolute;
   top: 0;
