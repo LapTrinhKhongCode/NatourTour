@@ -13,11 +13,30 @@
     transform: translate(-50%,-50%);
 }
 
+//Media query manager
+/*
+    0 - 600px : Phone
+    600 - 900px: Tablet
+
+*/
 
 
 
-@mixin respond-phone{
-    @media (max-width: 600px){
-        @content
-    };
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content}; //600px  
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {@content}; //900px
+    }
+    @if $breakpoint == tab-lane {
+        @media (max-width: 75em) {@content}; //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (max-width: 112.5em) {@content}; //1800px
+    }
+
 }
+
+
+
