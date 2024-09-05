@@ -7,20 +7,24 @@
     box-sizing: inherit;
 }
 
+
+
+
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 
     
 
-    @include respond(tab-land) {
+    @include respond(tab-land) {    //<1200
         font-size: 56.25%;
     }
 
-    @include respond(tab-port) {
+    @include respond(tab-port) {    //<900
             font-size: 50%;
     }
 
-    @include respond(big-desktop) {
+    @include respond(big-desktop) { 
         font-size: 75%;
     }
 
@@ -28,5 +32,11 @@ html{
 }
 
 body {
+    overflow-x: hidden;
     box-sizing: border-box;
+    padding: 3rem;
+    @include respond(tab-port) {    //<900
+        padding: 0;
+    }
 }
+

@@ -150,3 +150,24 @@
     }
 
 }
+
+
+.home{
+    &__button{
+        background-color: $color-white;
+        height: 5em;
+        width: 5rem;
+        position: fixed;
+        bottom: 14rem;
+        right: 1rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
+        cursor: pointer;
+    }
+    &__icon{
+        text-align: center;
+        opacity: 0.2;
+    }
+}
